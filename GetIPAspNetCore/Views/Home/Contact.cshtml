@@ -1,0 +1,7 @@
+﻿@{
+    ViewData["Title"] = "Obter IP pela View Razor";
+}
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor contexto
+
+<h1>Obter ip pelo construtor</h1>
+<h2>Endereço IP: @contexto.HttpContext.Connection.RemoteIpAddress.ToString()</h2>
